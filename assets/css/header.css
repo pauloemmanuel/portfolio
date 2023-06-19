@@ -1,0 +1,58 @@
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .photo{
+  width: 200px;
+  border-radius: 50%;
+  height: 200px;
+}
+
+
+.header .title{
+  font-family: 'Neue Machina',sans-serif;
+  font-weight: 400;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+.information p {
+  margin: .5rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.125rem;
+  word-break: break-all;
+  line-break: anywhere;
+  align-items: center;
+}
+
+.information p::before{
+  content: ' ';
+  width: 20px;
+  display: inline-block;
+  height: 20px;
+  margin-right: .5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+}
+
+
+.information .account::before{
+  background-image: url('/assets/img/icons/account-outline.svg');
+}
+.information .location::before{
+  background-image: url('/assets/img/icons/map-marker-outline.svg');
+}
+.information .number::before{
+  background-image: url('/assets/img/icons/whatsapp.svg');
+}
+.information .mail::before{
+  background-image: url('/assets/img/icons/email-outline.svg');
+}
