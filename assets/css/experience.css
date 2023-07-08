@@ -1,0 +1,27 @@
+.experience {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.experience li .period{
+
+  margin-left: 20px;
+  position: relative;
+}
+
+.experience li .period::before{
+  content: '';
+  display:inline-flex;
+  background: url('/assets/img/icons/calendar-month-outline.svg');
+  width: 17px;
+  position: absolute;
+  height: 17px;
+  left:-20px;
+  bottom: 1px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  margin-right: 0.45rem;
+}

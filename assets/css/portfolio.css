@@ -1,0 +1,24 @@
+.portifolio{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: flex-start;
+  margin:0;
+  width: 100%;
+  padding:0;
+  flex-flow: column nowrap;
+}
+
+.portifolio li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin:1rem 0rem;
+}
+
+.portifolio-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+

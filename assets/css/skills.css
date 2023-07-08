@@ -1,0 +1,27 @@
+.skills{
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 16px;
+}
+.skills .tools{
+  position: relative;
+  margin: auto;
+}
+.skills .tools ul{
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding:0;
+  position: relative;
+  list-style: none;
+}
+
+.skills .tools ul li img{
+  max-width: 55px;
+  width: 100%;
+  height: auto;
+  margin:0 5px;
+}

@@ -1,0 +1,26 @@
+.languages{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  margin-left: 0 !important;
+}
+
+.languages li {
+  padding: 0.5rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+.languages li::before {
+  content: '';
+  display:inline-block;
+  background: url('/assets/img/icons/check-bold.svg');
+  width: 14px;
+  height: 14px;
+  font-weight: bold;
+  margin-right: 0.45rem;
+}

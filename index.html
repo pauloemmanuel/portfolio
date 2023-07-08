@@ -10,6 +10,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/assets/css/header.css">
   <link rel="stylesheet" href="/assets/css/global.css">
+  <link rel="stylesheet" href="/assets/css/acordeon.css">
+  <link rel="stylesheet" href="/assets/css/languages.css">
+  <link rel="stylesheet" href="/assets/css/experience.css">
+  <link rel="stylesheet" href="/assets/css/portfolio.css">
+  <link rel="stylesheet" href="/assets/css/skills.css">
+  <link rel="shortcut icon" href="/assets/img/icons/favicon.svg" type="image/x-icon">
   <title>Paulo Oliveira</title>
 </head>
 
@@ -17,16 +23,121 @@
   <main class="main">
     <header class="header">
       <img src="/assets/img/profile.jpeg" alt="Foto de Perfil" class="photo">
-      <h1 class="title">Olá,<br> eu sou Paulo Oliveira</h1>
+      <h1 class="title">Olá,<br> eu sou<br> Paulo Oliveira</h1>
       <div class='information'>
         <p class="account"> Analista Programador Jr na Newm</p>
         <p class="location"> Fernandópolis - BR</p>
-        <p class="number"> (17) 9 99647-0610</p>
-        <p class="mail"> pauloemmanuelferreira@gmail.com</p>
+        <p class="number"><a href="tel:5517996470610"> (17) 99647-0610</a></p>
+        <p class="mail"><a href="mailto:pauloemmanuelferreira@gmail.com">pauloemmanuelferreira@gmail.com</a></p>
       </div>
   
     </header>
+    
+    <section class="acordeon">
+      <button class="trigger" type="button">
+        Habilidades
+      </button>
+
+      <div class="content">
+        <div class="skills">
+          <h3>Habilidades Profissionais:</h3>
+          <section class="tools">
+            <ul>
+              <li>
+                <img src="/assets/img/icons/tech/docker.svg" alt="docker" title="docker">
+              </li>
+              <li>
+                <img src="/assets/img/icons/tech/github.svg" alt="github" title="github">
+              </li>
+              <li>
+                <img src="/assets/img/icons/tech/language-javascript.svg" alt="javascript" title="javascript">
+              </li>
+              <li>
+                <img src="/assets/img/icons/tech/language-php.svg" alt="php" title="php">
+              </li>
+              <li>
+                <img src="/assets/img/icons/tech/nodejs.svg" alt="nodejs" title="nodejs">
+              </li>
+              <li>
+                <img src="/assets/img/icons/tech/laravel.svg" alt="laravel" title="laravel">
+              </li>
+            </ul>
+          </section>
+          <section class="softskills">
+            <h3>Habilidades Pessoais:</h3>
+            <ul>
+              <li>Liderança</li>
+              <li>Comunicação</li>
+              <li>Rápido Aprendizado</li>
+              <li>Organização</li>
+              <li>Flexibilidade</li>
+              <li>Paciência</li>
+              <li>Trabalho em Equipe</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="acordeon">
+      <button class="trigger" type="button">
+        Idiomas
+      </button>
+
+      <div class="content">
+        <ul class="languages">
+          <li>Português (BR)</li>
+          <li>Inglês</li>
+        </ul>
+      </div>
+    </section>
+    <section class="acordeon">
+      <button class="trigger" type="button">
+        Portfólio
+      </button>
+
+      <div class="content">
+        <ul class="portifolio">
+          <li>
+            <span class="portifolio-title">App Legal</span>
+            <a class="portifolio-link" href="www.google.com.br">www.google.com.br</a>
+          </li>
+          <li>
+            <span class="portifolio-title">App Legal 2</span>
+            <a class="portifolio-link" href="www.google.com.br">www.google.com.br</a>
+          </li>
+          <li>
+            <span class="portifolio-title">App Legal 3</span>
+            <a class="portifolio-link" href="www.google.com.br">www.google.com.br</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="acordeon">
+      <button class="trigger" type="button">
+        Experiência Profissional
+      </button>
+
+      <div class="content">
+        <ul class="experience">
+          <li>
+            <h3 class="title">Analista Programador Jr / Newm</h3>
+            <span class="period">Jan 2023 - Current</span>
+            <p>Loren loren Loren lorenLoren lorenLoren lorenLoren lorenLoren lorenLoren lorenLoren loren</p>
+          </li>
+          <li>
+            <h3 class="title">Analista Programador Jr / Newm</h3>
+            <span class="period">Jan 2023 - Current</span>
+            <p>Loren loren Loren lorenLoren lorenLoren lorenLoren lorenLoren lorenLoren lorenLoren loren</p>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
   </main>
+  
+  <script src="/assets/js/acordeon.js"></script>
 </body>
 
 </html>
+

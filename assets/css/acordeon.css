@@ -1,0 +1,78 @@
+.acordeon{
+  display: grid;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid #ff6b6b;
+  border-radius: 1rem;
+  margin: 1rem 0; 
+  transition: .25s;
+}
+
+.acordeon.open, 
+.acordeon:hover{
+  background-color: #500000;
+  border-color: #500000;
+}
+
+.acordeon .trigger{
+  font-size: 1.5rem;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:1rem 2rem;
+  background-color: transparent;
+  outline: none;
+  color:aliceblue;
+  border: none;
+  font-weight: 700;
+  
+}
+
+.acordeon .trigger:hover{
+  cursor: pointer;
+}
+
+.acordeon.open .trigger::after{
+  transform: rotate(0deg);
+
+}
+
+
+.acordeon .trigger::after{
+  content: '';
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  position: absolute;
+  color: #fff;
+  right: 20px;
+  top: 10px;
+  z-index: 2;
+  fill: #fff;
+  background-repeat: no-repeat;
+  background-image: url('/assets/img/icons/menu-down.svg');
+  transform: rotate(180deg);
+  transition: .6s;
+}
+
+.acordeon .content{
+  overflow: hidden;
+
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+
+}
+
+.acordeon.open .content{
+  opacity: 100%;
+
+}
+
+.acordeon  ul{
+  padding: 1rem;
+  padding-top: 0.5rem;
+  margin: 1rem;
+  margin-top: 0.5rem;
+}
