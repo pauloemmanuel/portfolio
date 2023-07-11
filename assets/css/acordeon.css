@@ -52,7 +52,7 @@
   z-index: 2;
   fill: #fff;
   background-repeat: no-repeat;
-  background-image: url('/assets/img/icons/menu-down.svg');
+  background-image: url('../img/icons/menu-down.svg');
   transform: rotate(180deg);
   transition: .6s;
 }

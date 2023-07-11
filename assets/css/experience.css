@@ -15,7 +15,7 @@
 .experience li .period::before{
   content: '';
   display:inline-flex;
-  background: url('/assets/img/icons/calendar-month-outline.svg');
+  background: url('../img/icons/calendar-month-outline.svg');
   width: 17px;
   position: absolute;
   height: 17px;

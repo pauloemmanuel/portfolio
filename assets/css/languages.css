@@ -18,7 +18,7 @@
 .languages li::before {
   content: '';
   display:inline-block;
-  background: url('/assets/img/icons/check-bold.svg');
+  background: url('../img/icons/check-bold.svg');
   width: 14px;
   height: 14px;
   font-weight: bold;

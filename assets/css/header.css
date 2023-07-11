@@ -39,16 +39,16 @@
   
 }
 .information .account::before{
-  background-image: url('/assets/img/icons/account-outline.svg');
+  background-image: url('../img/icons/account-outline.svg');
 }
 .information .location::before{
-  background-image: url('/assets/img/icons/map-marker-outline.svg');
+  background-image: url('../img/icons/map-marker-outline.svg');
 }
 .information .number::before{
-  background-image: url('/assets/img/icons/whatsapp.svg');
+  background-image: url('../img/icons/whatsapp.svg');
 }
 .information .mail::before{
-  background-image: url('/assets/img/icons/email-outline.svg');
+  background-image: url('../img/icons/email-outline.svg');
 }
 
 @media only screen and (min-width: 600px) {
