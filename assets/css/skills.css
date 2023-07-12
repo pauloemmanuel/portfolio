@@ -26,10 +26,10 @@
 }
 
 .skills .tools ul li img{
-  max-width: 55px;
-  width: 100%;
-  height: auto;
+  width: 55px;
+  height: 55px;
   margin:0 0.5rem;
+  object-fit: contain;
 }
 
 .skills .softskills ul{
