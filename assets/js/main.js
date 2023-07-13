@@ -3,9 +3,14 @@ import { fetchProfileData } from './api.js';
 (async function(){
   const data = await fetchProfileData();
   const profileData = new ProfileData(data.name,data.photo,data.job,data.location,data.phone,data.email);
-  updateProfileData(profileData);
+  
   const { hardSkills, softSkills } = data.skills;
-  updateSkills(softSkills,hardSkills)
+  
+  updateProfileData(profileData);
+  await updateSkills(softSkills,hardSkills)
+  updateLanguages(data.languages)
+  updatePortfolio(data.portfolio)
+  updateProfessionalExperience(data.professionalExperience)
 })()
 
 function updateProfileData(profileData){
@@ -17,9 +22,9 @@ function updateProfileData(profileData){
   document.querySelector('#profile_mail').innerText = profileData.email;
 }
 
-function updateSkills(softSkills,hardSkills){
+async function updateSkills(softSkills,hardSkills){
   updateSoftSkills(softSkills);
-  updateHardSkills(hardSkills);
+  await updateHardSkills(hardSkills);
 }
 
 function updateSoftSkills(softSkills){
@@ -32,7 +37,7 @@ function updateSoftSkills(softSkills){
   }
 }
 
-function updateHardSkills(hardSkills){
+async function updateHardSkills(hardSkills){
   const hardSkillsList = document.querySelector('#profile_hard-skills');
   hardSkillsList.innerHTML = '';
   for(const hardSkill of hardSkills){
@@ -45,6 +50,44 @@ function updateHardSkills(hardSkills){
   }
 }
 
+function updateLanguages(languages){
+  const languagesList = document.querySelector('#languages');
+  languagesList.innerHTML = '';
+  for(const language of languages){
+    const languageElement = document.createElement('li');
+    languageElement.innerText = language;
+    languagesList.append(languageElement);
+  }
+}
+
+function updatePortfolio(portfolioItems){
+  const portfolioList = document.querySelector('#profile_portfolio');
+  portfolioList.innerHTML = '';
+  for(const item of portfolioItems){
+    const portfolioElement = document.createElement('li');
+    portfolioElement.innerHTML = `
+    <li>
+      <span class="portifolio-title">${item.name}</span>
+      <a class="portifolio-link" target="_blank" href="${item.url}">${item.url}/</a>
+    </li>`
+    portfolioList.append(portfolioElement);
+  }
+}
+
+function updateProfessionalExperience(professionalExperiences){
+  const professionalExperiencesList = document.querySelector('#profile_experience');
+  professionalExperiencesList.innerHTML = '';
+  for(const professionalExperience of professionalExperiences){
+    const professionalExperienceElement = document.createElement('li');
+    professionalExperienceElement.innerHTML = `
+    <li>
+      <h3 class="title">${professionalExperience.name}</h3>
+      <span class="period">${professionalExperience.period}</span>
+      <p>${professionalExperience.description}</p>
+    </li>`
+    professionalExperiencesList.append(professionalExperienceElement);
+  }
+}
 class ProfileData { 
   name;
   photo;

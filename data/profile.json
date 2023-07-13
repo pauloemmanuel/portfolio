@@ -44,7 +44,7 @@
         "logo": "https://pauloemmanuel.github.io/portfolio/data/imgs/sass.png"
       },
       {
-        "name": "Sass",
+        "name": "TypeScript",
         "logo": "https://pauloemmanuel.github.io/portfolio/data/imgs/typescript.png"
       }
     ],
@@ -63,31 +63,44 @@
   ],
   "portfolio": [
     {
-      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
-      "url": "https://github.com/RenanJPaula/js-developer-pokedex",
-      "github": true
+      "name": "Curso Ministrado na DIO para a criação de uma Pokedex com JavaScript",
+      "url": "https://github.com/pauloemmanuel/js-developer-pokedex"
     },
     {
-      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
-      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
-      "github": true
+      "name": "WebSite feito para demonstração do estoque de veículos integrado a API AutoGestor",
+      "url": "https://shalonveiculos.com.br/"
+    },
+    {
+      "name": "Projeto ganhador do 3° lugar do Hackaton Newm, solução de ChatBot",
+      "url": "https://github.com/pauloemmanuel/HackathonNewm"
+    },
+    {
+      "name": "Página estática, demonstrando algumas informações sobre os planetas - FrontEnd Mentor",
+      "url": "https://github.com/pauloemmanuel/PlanetsInfo"
+    },
+    {
+      "name": "Página estática, de venda de produtos - FrontEnd Mentor",
+      "url": "https://github.com/pauloemmanuel/E_commerce_product_page"
+    },
+    {
+      "name": "Projeto com página dinâmica para mostrar um cardápio de pizzas com função de carrinho",
+      "url": "https://github.com/pauloemmanuel/Venda_De_Pizza"
+    },
+    {
+      "name": "Homenagem ao Yoda de Star Wars",
+      "url": "https://github.com/pauloemmanuel/Tributo"
     }
   ],
   "professionalExperience": [
     {
-      "name": "Arquiteto de software / S3 BANK",
-      "period": "2022 - até o momento",
-      "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
+      "name": "Analista Programador Jr / Newm Tecnologia",
+      "period": "Jan 2022 - até o momento",
+      "description": "É um prazer trabalhar ao lado de ótimos profissionais, construindo inovações e soluções de qualidade."
     },
     {
-      "name": "Software Engineering Lead / DIO",
-      "period": "2021 - 2022",
-      "description": "Foi um grande prazer fazer parte deste time fantástico e poder contribuir com a transformação de tantas vidas."
-    },
-    {
-      "name": "CEO / Brain Machine",
-      "period": "2016 - 2021",
-      "description": "Anos incríveis ao lado de pessoas maravilhosas ajudando muitas empresas por todo o mundo."
+      "name": "Estagiário em Desenvolvimento / Newm Tecnologia",
+      "period": "Dez 2021 - Dez 2022",
+      "description": "Foi um grande aprendizado, me preparou para o mercado de trabalho ."
     }
   ]
 }
